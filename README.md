@@ -55,6 +55,32 @@ flutter run
 - **State Management**: Provider
 - **Database**: ObjectBox
 
+## 🌐 MCP Servers
+
+This repository includes example MCP servers that expose additional tools over
+WebSockets.
+
+- **Weather MCP** (`lib/mcp/mcp_server.py`) provides weather forecasts (port
+  8080).
+- **Jokes MCP** (`lib/mcp/jokes_mcp_server.py`) returns a random programming
+  joke via the `get-joke` tool (port 8081).
+- **Calendar MCP** (`lib/mcp/calendar_mcp_server.py`) schedules meetings (port
+  8082).
+- **Travel MCP** (`lib/mcp/travel_mcp_server.py`) plans travel itineraries
+  (port 8083).
+- **Local Info MCP** (`lib/mcp/local_info_mcp_server.py`) suggests nearby
+  points of interest (port 8084).
+- **Geolocation MCP** (`lib/mcp/geolocation_mcp_server.py`) resolves IP
+  addresses to a location (port 8085).
+
+Run a server with:
+
+```bash
+pip install aiohttp websockets
+python lib/mcp/<server_file>.py
+```
+
+
 ## 🤝 Contributing
 
 We welcome contributions! Please follow these steps:
